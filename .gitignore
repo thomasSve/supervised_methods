@@ -33,11 +33,13 @@ Code/*
 !Code/main.py
 
 # Include datasets
-!Code/datasets
+!Code/datasets/
+
 Code/datasets/*
-!Code/datasets/adult
-!Code/datasets/covertype
-!Code/datasets/letter-recognition
+
+!Code/datasets/adult/
+!Code/datasets/covertype/
+!Code/datasets/letter-recognition/
 
 # Include gitignore
 !.gitignore
