@@ -36,10 +36,12 @@ Code/*
 !Code/datasets/
 
 Code/datasets/*
-
 !Code/datasets/adult/
+!Code/datasets/adult/*
 !Code/datasets/covertype/
+!Code/datasets/covertype/*
 !Code/datasets/letter-recognition/
+!Code/datasets/letter-recognition/*
 
 # Include README.md
 !README.md
