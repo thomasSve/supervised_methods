@@ -1,0 +1,44 @@
+# Ignore everything
+*
+
+# Include rapport-folde
+!Rapport/
+
+# Ignore everything inside the folder except pdf
+Rapport/*
+!Rapport/final_project.pdf
+
+# Include Code-folder
+!Code/
+
+# Ignore everything inside the folder except a few files
+Code/*
+
+# Include data generator files
+!Code/adult_data.py
+!Code/covtype_data.py
+!Code/letter_data.py
+
+# Include classifiers files
+!Code/k_nearest_neighbors.py
+!Code/svm.py
+!Code/random_forrest.py
+!Code/decision_tree.py
+!Code/neural_networks.py
+
+# Include utils file
+!Code/utils.py
+
+# Include main file
+!Code/main.py
+
+# Include datasets
+!Code/datasets
+Code/datasets/*
+!Code/datasets/adult
+!Code/datasets/covertype
+!Code/datasets/letter-recognition
+
+# Include gitignore
+!.gitignore
+
