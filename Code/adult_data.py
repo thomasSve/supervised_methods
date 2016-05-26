@@ -32,7 +32,7 @@ def convert_features(line):
 def generate_adult_data():
     X = []
     y = []
-    with open(adult_debug, 'r') as file:
+    with open(adult, 'r') as file:
         for line in file:
             words = line.split(',')
             words = map(str.strip, words)

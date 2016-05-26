@@ -14,7 +14,8 @@ a description of C44LS.
 """
 
 def build_decision_tree(X, y):
-    clf = tree.DecisionTreeClassifier(max_depth=None, min_samples_split=1, random_state=0)
+    # Decision tree using entropy
+    clf = tree.DecisionTreeClassifier(criterion="entropy")
     clf = clf.fit(X, y)
     return clf
 

@@ -36,8 +36,8 @@ def predict_value(neighbors):
     return sorted_values[0][0]
 
 def test_kNN_classifier(X_train, y_train, X_test, y_test):
-    #k_values = [1, 5, 7, 12, 16, 26, 40, 60, 80, 100, 250, 500, 750, 1000, 2000, len(X_train)]
-    k_values = [1, 3, 5, 7]
+    k_values = [1, 5, 7, 12, 16, 26, 40, 60, 80, 100, 250, 500, 750, 1000, 2000, len(X_train)]
+    #k_values = [1, 3, 5, 7]
     distances = calculate_distances(X_train, y_train, X_test, y_test)
     scores = []
     for k in k_values:

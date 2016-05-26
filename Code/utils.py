@@ -18,6 +18,10 @@ def grid_search_cross_val(classifier, params, X, y):
     return clf
 
 def split_into_train_test(X, y, train_size):
+    data = zip(X, y)
+    shuffle(data)
+    X, y = zip(*data)
+    
     return X[:train_size], X[train_size:], y[:train_size], y[train_size:]
 
 def calculate_error(predictions, actual_values):

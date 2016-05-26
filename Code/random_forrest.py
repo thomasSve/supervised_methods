@@ -11,10 +11,8 @@ from sklearn.ensemble import RandomForestClassifier
 from utils import *
 
 def build_random_forrest_clf(X, y):
-    clf = RandomForestClassifier(n_estimators=10, max_depth=None,  min_samples_split=1, random_state=0)
+    clf = RandomForestClassifier(n_estimators=200, bootstrap = True)
     clf = clf.fit(X, y)
-    scores = cross_val_score(clf, X, y)
-    print("Random forrest, training-score: ", scores.mean())
     return clf
 
 def test_random_forrest_clf(X, y, clf):
