@@ -1,12 +1,7 @@
 # Ignore everything
 *
 
-# Include rapport-folde
-!Rapport/
-
-# Ignore everything inside the folder except pdf
-Rapport/*
-!Rapport/final_project.pdf
+!final_project.pdf
 
 # Include Code-folder
 !Code/
